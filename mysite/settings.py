@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 #ALLOWED_HOSTS = []
 
-LOGIN_REDIRECT_URL = '/'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -81,7 +81,32 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+#mｙsite 作った
+#動いた　2019 8 22
+#リレーション"blog_comment"は存在しません
+#LINE 1: SELECT COUNT(*) AS "__count" FROM "blog_comment" WHERE "blog..
+#
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'mysite_db',
+#        'USER': 'postgres',
+#        'PASSWORD': '1357531KSsc22',
+#        'HOST': '127.0.0.1',
+#        'PORT': '5432',
+#    }
+#}
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'test_db',
+#        'USER': 'postgres',
+#        'PASSWORD': '',
+#        'HOST': 'localhost',
+#        'PORT': '',
+#    }
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -115,7 +140,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+LOGIN_REDIRECT_URL = '/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
